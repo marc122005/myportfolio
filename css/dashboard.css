@@ -48,6 +48,11 @@
   color: gray;
   font-size: 17px;
 }
+@media (max-width:480px){
+  .box .text h2{
+    font-size: 20px;
+  }
+}
 .box .wel-intro img {
   width: 200px;
   position: absolute;

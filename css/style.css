@@ -66,6 +66,11 @@ ul{
     border-color: #ccc;
     background-color: white;
 }
+@media (max-width:480px){
+    .content .search input:focus{
+        width: 120px;
+    }
+}
 .content .search input:focus::placeholder{
     opacity: 0;
 }
