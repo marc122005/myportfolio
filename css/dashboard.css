@@ -59,7 +59,15 @@
   right: 25px;
   top: 20px;
 }
+
 @media (max-width: 768px) {
+  .box .wel-intro img {
+    width: 150px;
+    right: 25px;
+    top: 100px;
+  }
+}
+@media (max-width: 480px) {
   .box .wel-intro img {
     width: 100px;
     right: 25px;
