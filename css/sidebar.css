@@ -86,19 +86,11 @@
 .sidebar ul li a i {
     margin-right: 10px;
 }
-
-
 /* small screen like tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
     
     .sidebar ul li a {
         width: 100%;
-    }
-}
-@media (max-width:480px){
-    .sidebar img{
-        width: 45px;
-        height: 45px;
     }
 }
 /* very small screen like phone*/
@@ -114,7 +106,7 @@
         height: 55px;
     }
     .sidebar h1{
-        font-size:20px ;
+        font-size:15px ;
         margin-top: 20px;
     }
     .sidebar h1::before{
@@ -123,8 +115,12 @@
     .sidebar h1::after{
         width:100%;
     }
-    
 }
-
+@media (max-width:480px){
+    .sidebar img{
+        width: 30px;
+        height: 30px;
+    }
+}
 
 
