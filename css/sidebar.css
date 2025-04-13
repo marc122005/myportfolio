@@ -1,0 +1,123 @@
+:root{
+    --main-font: "Open Sans", sans-serif;
+
+}
+.sidebar{
+    background-color: #222222;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.sidebar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar h1{
+    text-align: center;
+    font-family: var(--main-font);
+    position: relative;
+    margin-top: 0;
+    }
+
+.sidebar h1::after{
+    position: absolute;
+    content: "";
+    border: 1.5px solid white;
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar h1::before{
+    content: "";
+    border: 3px solid gray ;
+    background-color: white;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: -23px;
+    z-index: 3;
+
+}
+.sidebar ul{
+    margin-top: 50px;
+    color: white;
+}
+.sidebar ul li{
+    margin-bottom: 10px;
+    border: 1px solid none;
+    display: flex;
+    
+}
+.sidebar ul li a{
+    padding-left: 10px;
+    font-family:  "Open Sans", sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    padding-top: 10px;
+    transition: 0.1s;
+    color: white;
+    
+}
+.sidebar ul li a:hover {
+    background-color: gray;
+}
+.sidebar ul li a:focus {
+    background-color: gray;
+}
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+
+/* small screen like tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .sidebar ul li a {
+        width: 100%;
+    }
+}
+
+/* very small screen like phone*/
+@media (max-width:768px){
+    .sidebar ul li a span {
+        display: none;
+    }
+    .sidebar ul li a{
+        width: fit-content;
+    }
+    .sidebar img{
+        width: 55px;
+        height: 55px;
+    }
+    .sidebar h1{
+        font-size:20px ;
+        margin-top: 20px;
+    }
+    .sidebar h1::before{
+        display: none;
+    }
+    .sidebar h1::after{
+        width:100%;
+    }
+    
+}
+
+
