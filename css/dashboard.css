@@ -61,7 +61,7 @@
 }
 @media (max-width: 768px) {
   .box .wel-intro img {
-    width: 150px;
+    width: 100px;
     right: 25px;
     top: 100px;
   }
