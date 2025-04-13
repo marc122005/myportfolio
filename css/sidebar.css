@@ -95,7 +95,12 @@
         width: 100%;
     }
 }
-
+@media (max-width:480px){
+    .sidebar img{
+        width: 45px;
+        height: 45px;
+    }
+}
 /* very small screen like phone*/
 @media (max-width:768px){
     .sidebar ul li a span {
@@ -120,11 +125,6 @@
     }
     
 }
-@media (max-width:480px){
-    .sidebar img{
-        width: 45px;
-        height: 45px;
-    }
-}
+
 
 
