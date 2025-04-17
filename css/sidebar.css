@@ -3,7 +3,7 @@
 
 }
 .sidebar{
-    background-color: #222222;
+    background: linear-gradient(to bottom,#0a0f2c 0%, #11163d 25%, #1a1f40 50%, #1f244a 75%, #2a2f55 100%);
     width: 15%;
     height: 100%;
     position: fixed;
@@ -78,10 +78,12 @@
     
 }
 .sidebar ul li a:hover {
-    background-color: gray;
+    background-color: white;
+    color: #2a2f55;
 }
-.sidebar ul li a:focus {
-    background-color: gray;
+.sidebar ul li a:focus{
+    background-color: white;
+    color: #2a2f55;
 }
 .sidebar ul li a i {
     margin-right: 10px;

@@ -14,8 +14,6 @@ body{
 }
 a{
     text-decoration: none;
-    color: black;
-
 }
 ul{
     list-style: none;
@@ -131,7 +129,7 @@ footer{
     font-family: var(--main-font);
     width: 85%;
     margin-left: 15%;
-    background-color: #222222;
+    background-color: #272C52;
     height: 100px;
     display: flex;
     flex-direction: column;
