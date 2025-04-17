@@ -1,7 +1,8 @@
 :root {
   --main-font: "Open Sans", sans-serif;
   --orange-color: rgb(245, 158, 11);
-  --blue-color: rgb(0, 117, 255);
+  --blue-color: #464d85;
+    --blue2-color: #2b2f51;
   --main-color: rgb(238, 238, 238);
 }
 .container {
@@ -119,7 +120,7 @@
   color: gray;
   opacity: 0.3;
 }
-.wel-buttom {
+button {
   background-color: var(--blue-color);
   border: none;
   padding: 5px;
@@ -130,10 +131,10 @@
   transition: 0.3;
   width: 65px;
 }
-.wel-buttom:hover {
+button:hover {
   background-color: rgb(13, 105, 213);
 }
-.wel-buttom a {
+button a {
   color: white;
 }
 
@@ -162,18 +163,11 @@
   box-sizing: border-box;
 }
 .box .draft-in button{
-  background-color: var(--blue-color);
-  width: 65px;
-  padding: 5px;
-  border-radius: 6px;
-  border: none;
   position: absolute;
-  right: 20px;
-  bottom: 10px;
-  
-}
-.box .draft-in button a{
-  color: white;
+  right: 30px;
+  bottom: 20px;
+  transition: 0.3s;
+  width: 65px;
 }
 .box .social-media .links button{
   position: absolute;

@@ -1,7 +1,8 @@
 :root {
     --main-font: "Open Sans", sans-serif;
     --orange-color: rgb(245, 158, 11);
-    --blue-color: rgb(0, 117, 255);
+    --blue-color: #464d85;
+    --blue2-color: #2b2f51;
     --main-color: rgb(238, 238, 238);
 }
 .container{
@@ -85,7 +86,10 @@ hr{
     bottom: 30px;
     width: 60px;
     height: 30px;
-    
+    transition: 0.3s;
+}
+.box button:hover{
+    background-color: var(--blue2-color);
 }
 .box button a{
     align-items: center;
