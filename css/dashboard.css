@@ -120,7 +120,7 @@
   color: gray;
   opacity: 0.3;
 }
-button {
+.button-1 {
   background-color: var(--blue-color);
   border: none;
   padding: 5px;
