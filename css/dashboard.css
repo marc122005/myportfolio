@@ -120,7 +120,7 @@
   color: gray;
   opacity: 0.3;
 }
-button {
+.button1 {
   background-color: var(--blue-color);
   border: none;
   padding: 5px;
@@ -131,10 +131,10 @@ button {
   transition: 0.3;
   width: 65px;
 }
-button:hover {
+.button1:hover {
   background-color: rgb(13, 105, 213);
 }
-button a {
+.button1 a {
   color: white;
 }
 
