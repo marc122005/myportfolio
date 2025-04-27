@@ -1,0 +1,44 @@
+:root{
+    --main-font: "Open Sans", sans-serif;
+
+}
+.certificats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: var(--main-font);
+}
+.certificats .cert-box{
+    width: 45%;
+    padding: 20px;
+    background: linear-gradient(to bottom,#0a0f2c 0%, #11163d 25%, #1a1f40 50%, #1f244a 75%, #2a2f55 100%,white 100%);
+    color: white;
+    border-radius: 20px;
+}
+.certificats .cert-box img{
+    width: 100%;
+    border-radius: 20px;
+}
+.certificats .cert-box .text h5{
+    text-align: end;
+    padding: 10px 10px 10px 10px;
+    font-family: var(--main-font);
+
+}
+.certificats .cert-box .text p{
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+@media(max-width:990px){
+    .certificats{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .certificats .cert-box{
+        width: 90%;
+        margin-left: 10px;
+        padding: 10px;
+    }
+}
