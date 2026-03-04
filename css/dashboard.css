@@ -24,6 +24,11 @@
   font-family: var(--main-font);
   position: relative;
   margin-left: 5px;
+  transition: 0.3s;
+  
+}
+.container .box:hover{
+  transform: translateY(-5px);
 }
 @media (max-width: 1200px) {
   .container .box {

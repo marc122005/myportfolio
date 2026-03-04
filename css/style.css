@@ -84,7 +84,195 @@ nav .notifcation img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --main-font: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 20px;
+    font-family: var(--main-font);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Layout */
+.page {
+    width: 100%;
+}
+
+/* Content */
+.content {
+    background-color: rgb(241, 245, 249);
+    width: 85%;
+    margin-left: 15%;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.content nav {
+    background-color: white;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Search */
+.search {
+    position: relative;
+}
+
+.search::before {
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.search input {
+    height: 35px;
+    width: 150px;
+    padding-left: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.search input:focus {
+    width: 180px;
+    outline: none;
+}
+
+@media (max-width:480px){
+    .search input:focus{
+        width: 120px;
+    }
+}
+
+.search input:focus::placeholder{
+    opacity: 0;
+}
+
+/* Notification */
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav .notification img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.notification i {
+    font-size: 20px;
+    position: relative;
+}
+
+.notification i::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/* Title */
+.intro h1 {
+    margin-top: 30px;
+    margin-left: 5px;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+
+.intro h1::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    background-color: white;
+    bottom: -10px;
+}
+
+.intro h1::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3.5px;
+    background-color: black;
+    bottom: -10px;
+    left: 0;
+}
+
+/* Footer */
+footer {
+    width: 85%;
+    margin-left: 15%;
+    background-color: #272C52;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+footer .footer-content h3 {
+    font-size: 18px;
+}
+
+footer .footer-content p {
+    font-size: 12px;
+}
+
+footer .footer-content p a {
+    text-decoration: underline;
+    color: white;
+}
+
+footer .socials a {
+    margin: 0 8px;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+footer .socials a:hover {
+    transform: translateY(-3px);
+}
 }
 nav .notifcation i{
     font-size: 20px;
